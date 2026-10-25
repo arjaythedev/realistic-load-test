@@ -1,0 +1,7 @@
+{
+  "name": "realistic-load-test",
+  "version": "0.1.0",
+  "description": "Load test your own website or API with k6 virtual users that behave like your real users: profile from logs or the browser, calibrate, size load generators, run a staircase plus confirmation holds, and report how many concurrent users you can serve.",
+  "author": { "name": "Arjay McCandless" },
+  "keywords": ["load-testing", "k6", "performance", "capacity", "stress-test"]
+}

@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: logs-to-capacity
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Derives a per-user profile from the logs (requests/s per active user, endpoint mix, read/write split, think time),
+  writes a k6 journey that reproduces it with think times and test-account auth, calibrates it at low load, runs a
+  staircase-style search against the local staging server with p95/p99/error criteria, and reports a concurrent-user
+  number with per-endpoint latency, what breaks first, and caveats (laptop load generator, staging vs prod).

@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: launch-no-logs-vercel
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Without logs, profiles the user from the app itself (browser/HAR or the page's code), including the 15 s /api/stats
+  poll, the parallel product requests and the cookie session; labels assumed think times and journey weights as
+  assumptions; keeps the welcome-email side effect of /api/waitlist out of the test; treats it as a "can it survive N"
+  question with holds at 3,000 and a margin; and covers Vercel specifics (firewall allow-listing, cost, Neon connection
+  limits as the likely bottleneck).

@@ -1,0 +1,11 @@
+{
+  "name": "realistic-load-test",
+  "owner": { "name": "Arjay McCandless" },
+  "plugins": [
+    {
+      "name": "realistic-load-test",
+      "source": "./",
+      "description": "Find out how many real users your site can handle, with k6 virtual users modeled on your actual traffic."
+    }
+  ]
+}
